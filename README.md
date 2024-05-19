@@ -21,3 +21,9 @@ pip install -r requriements.txt
 
 ## Project state
 This project is finished.
+
+## Preview
+
+
+https://github.com/DominikJur1/Custom_Tkinter_Project/assets/162451655/cf0d5779-13ea-443a-83e5-df6dcba1d934
+
