@@ -1,10 +1,8 @@
 import requests
 import json
-import sys
 
 
 def update_currency_rates():  # Get currency info from NBP API
-    sys.path.append("data")
     url = "https://api.nbp.pl/api/exchangerates/tables/a/?format=json"
     response = requests.get(url)
     r = [dict(response.json()[0])]

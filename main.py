@@ -137,4 +137,4 @@ class Currency_Converter:
 
 
 if __name__ == "__main__":
-    Currency_Converter(currencies, codes, rates, date)
+    cc = Currency_Converter(currencies, codes, rates, date)

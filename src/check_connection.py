@@ -8,7 +8,7 @@ def check_connection_with_webservice_and_internet_connection():
             "https://api.nbp.pl/api/exchangerates/tables/a/?format=json",
             timeout=timeout,
         )
-    except Exception:
+    except requests.RequestException:
         try:
             requests.get("www.google.com", timeout=timeout)
 
@@ -16,7 +16,7 @@ def check_connection_with_webservice_and_internet_connection():
                 "Nie udało się pobrać danych, prawdodpodobnie brak połączenia z NBP. Wyliczenia na podstawie poprzednich kursów."
             )
             return False
-        except Exception:
+        except requests.RequestException:
             print(
                 "Nie udało się pobrać danych, prawdodpodobnie brak połączenia z internetem. Wyliczenia na podstawie poprzednich kursów."
             )
